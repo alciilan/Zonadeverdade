@@ -1,45 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zona de Verdade</title>
-    <link href="style.css" rel="stylesheet" />
-    <script>
-        function showTab(tabId) {
-            var tabs = document.querySelectorAll(".tab-content");
-            tabs.forEach(tab => tab.style.display = "none");
-            document.getElementById(tabId).style.display = "block";
-        }
-    </script>
+  <meta charset="UTF-8">
+  <title>Zona de Verdade</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="showTab('destaques')">
-    <header>
-        <img src="logo.png" alt="Logo Zona de Verdade" class="logo" />
-        <h1>Zona de Verdade</h1>
-        <p>Notícias sem filtro. Verdade sem medo.</p>
-        <nav>
-            <button onclick="showTab('destaques')">Destaques</button>
-            <button onclick="showTab('ultimas')">Últimas Notícias</button>
-            <button onclick="showTab('opiniao')">Opinião</button>
-        </nav>
-    </header>
-    <main>
-        <section id="destaques" class="tab-content">
-            <h2>Destaques</h2>
-            <p>Notícias em destaque da semana.</p>
-        </section>
-        <section id="ultimas" class="tab-content">
-            <h2>Últimas Notícias</h2>
-            <p>Atualizações em tempo real sobre política, sociedade e liberdade.</p>
-        </section>
-        <section id="opiniao" class="tab-content">
-            <h2>Opinião</h2>
-            <p>Análises profundas e sem censura.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Zona de Verdade. Todos os direitos reservados.</p>
-    </footer>
+<body style="background-color: #0c1e38; color: white; font-family: Arial, sans-serif;">
+  <header style="display: flex; align-items: center; padding: 10px 20px; background-color: #101c2c;">
+    <img src="logo.png" alt="Zona de Verdade" style="height: 50px; margin-right: 15px;">
+    <h1 style="font-size: 24px; color: white;">Zona de Verdade</h1>
+  </header>
+  <nav style="display: flex; gap: 20px; padding: 10px 20px; background-color: #192a45;">
+    <a href="#ultimas" style="color: white; text-decoration: none;">Últimas Notícias</a>
+    <a href="#sobre" style="color: white; text-decoration: none;">Sobre</a>
+    <a href="#contato" style="color: white; text-decoration: none;">Contato</a>
+  </nav>
+  <main style="padding: 20px;">
+    <section id="ultimas">
+      <h2 style="color: #ff4757;">Últimas Notícias</h2>
+      <article style="background: #15233a; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+        <h3 style="color: #ffffff;">Missionária Eliane Pinheiro é solta após decisão de Alexandre de Moraes</h3>
+        <p style="color: #dfe4ea;">
+          A missionária Eliane Pinheiro, presa durante os atos de 8 de janeiro e transferida para um presídio no Maranhão, 
+          foi finalmente solta após decisão do ministro Alexandre de Moraes. Ela ficou mais de um ano longe da família, 
+          sem julgamento concluído, e foi alvo de denúncias de abuso judicial e desrespeito aos direitos humanos. Eliane retorna 
+          agora à sua cidade natal, acolhida por amigos e familiares, e promete seguir lutando por justiça.
+        </p>
+      </article>
+    </section>
+
+    <section id="sobre">
+      <h2 style="color: #ff4757;">Sobre</h2>
+      <p style="color: #dfe4ea;">Zona de Verdade é um portal de jornalismo independente, voltado à liberdade de expressão e à defesa da verdade.</p>
+    </section>
+
+    <section id="contato">
+      <h2 style="color: #ff4757;">Contato</h2>
+      <p style="color: #dfe4ea;">Email: contato@zonadeverdade.com</p>
+    </section>
+  </main>
 </body>
 </html>
