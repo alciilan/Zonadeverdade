@@ -12,18 +12,37 @@ header {
     padding: 20px;
     text-align: center;
 }
+nav button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav button:hover {
+    background-color: #555;
+}
 main {
     padding: 20px;
 }
-section {
+.tab-content {
     background: white;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
+    display: none;
 }
 footer {
     background: #0d0d0d;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
 }
