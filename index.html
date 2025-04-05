@@ -3,25 +3,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zona de Verdade</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #0c1e38; color: white; font-family: Arial, sans-serif;">
-  <header style="display: flex; align-items: center; padding: 10px 20px; background-color: #101c2c;">
-    <img src="logo.png" alt="Zona de Verdade" style="height: 50px; margin-right: 15px;">
-    <h1 style="font-size: 24px; color: white;">Zona de Verdade</h1>
+<body>
+  <div class="sidebar">
+    <a href="#ultimas">Últimas Notícias</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <header>
+    <img src="logo.png" alt="Zona de Verdade">
+    <h1>Zona de Verdade</h1>
   </header>
-  <nav style="display: flex; gap: 20px; padding: 10px 20px; background-color: #192a45;">
-    <a href="#ultimas" style="color: white; text-decoration: none;">Últimas Notícias</a>
-    <a href="#sobre" style="color: white; text-decoration: none;">Sobre</a>
-    <a href="#contato" style="color: white; text-decoration: none;">Contato</a>
-  </nav>
-  <main style="padding: 20px;">
+
+  <main>
     <section id="ultimas">
-      <h2 style="color: #ff4757;">Últimas Notícias</h2>
-      <article style="background: #15233a; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-        <h3 style="color: #ffffff;">Missionária Eliane Pinheiro é solta após decisão de Alexandre de Moraes</h3>
-        <p style="color: #dfe4ea;">
+      <h2>Últimas Notícias</h2>
+      <article>
+        <h3>Missionária Eliane Pinheiro é solta após decisão de Alexandre de Moraes</h3>
+        <p>
           A missionária Eliane Pinheiro, presa durante os atos de 8 de janeiro e transferida para um presídio no Maranhão, 
           foi finalmente solta após decisão do ministro Alexandre de Moraes. Ela ficou mais de um ano longe da família, 
           sem julgamento concluído, e foi alvo de denúncias de abuso judicial e desrespeito aos direitos humanos. Eliane retorna 
@@ -31,14 +34,24 @@
     </section>
 
     <section id="sobre">
-      <h2 style="color: #ff4757;">Sobre</h2>
-      <p style="color: #dfe4ea;">Zona de Verdade é um portal de jornalismo independente, voltado à liberdade de expressão e à defesa da verdade.</p>
+      <h2>Sobre</h2>
+      <p>Zona de Verdade é um portal de jornalismo independente, voltado à liberdade de expressão e à defesa da verdade.</p>
     </section>
 
     <section id="contato">
-      <h2 style="color: #ff4757;">Contato</h2>
-      <p style="color: #dfe4ea;">Email: contato@zonadeverdade.com</p>
+      <h2>Contato</h2>
+      <p>Email: alcilan20@gmail.com</p>
+      <p>Telefone: (12) 99225-4284</p>
     </section>
   </main>
+
+  <audio controls autoplay loop style="margin: 20px;">
+    <source src="hino_nacional.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <footer>
+    <span class="assinatura">Alcilan da Silva Azevedo</span>
+  </footer>
 </body>
 </html>
